@@ -93,6 +93,15 @@ p {
     font-size: 16px;
   }
 }
+input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: blue;
+      color: white;
+    } 
 </style>
 
 </head>
@@ -101,34 +110,38 @@ p {
 <h1>Bristol's Secret Bars</h1>
 <h2>The best speakeasies in the South-West</h2>
 <div class="first">
-  <p>Hyde and Co<br />
+  <p>Hyde and Co<br /> <button>Like</button>
   <small>Probably the most popular hidden bar in Bristol, be sure to make a booking to avoid being turned away at the door!</small></p>
 </div>
 
 <div class="second">
-  <p>Red Light<br />
+  <p>Red Light<br /> <button>Like</button>
   <small>The entrance to this bar is hidden behind a fake collect-call telephone on the side of the door and a dim red light.</small></p>
 </div>
   
 <div class="third">
-  <p>Hausbar<br />
+  <p>Hausbar<br /> <button>Like</button>
   <small>At the top of Whiteladies'road, this bar is open every evening from 8pm to 2am.</small></p>
 </div>
 
 <div class="fourth">
-  <p>Her Majesty's Secret Service<br />
+  <p>Her Majesty's Secret Service<br /> <button>Like</button>
   <small>Creative cocktails that change every season, don't be suprised when you see something served in a bean can or a brown paper bag!</small></p>
 </div>
 
 <div class="fifth">
-  <p>The Milk Thistle<br />
+  <p>The Milk Thistle<br />  <button>Like</button>
   <small>Right in the heart of the city centre, this discreet bar has made people go around in circles before discovering the door.</small></p>
 </div>
 
-<script>$('div').on('click', function() {
-    $(this).toggleClass('show-description');
-  });</script>
+<input type="email" placeholder="Your email">
+  <input type="submit">
+
+<script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
 </body>
-=======
-hello
->>>>>>> 24e0d72b022f961f5b50d8136082cff176747ae3
+
+
