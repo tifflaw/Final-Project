@@ -1,1 +1,156 @@
-hello
+<!DOCTYPE html>
+
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Calibri', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+.small {
+  opacity: 0;
+}
+.show-description p {
+  height: 150px;
+}
+.show-description small {
+  opacity: 1;
+}
+.first{
+  background-image: url("assets/Party.jpg");
+}
+.second{
+  background-image: url("https://media.timeout.com/images/102078979/image.jpg");
+}
+.third{
+  background-image: url("http://hausbar.df-kunde.de/wp-content/uploads/2016/01/bar.jpg");
+}
+.fourth{
+  background-image: url("https://www.bristol247.com/wp-content/uploads/2017/01/hmss-seats-1438619159-1.jpg");
+}
+.fifth{
+  background-image: url("https://www.bristol247.com/wp-content/uploads/2017/10/Milk-Thistle-Bristol-bar-1200x675.jpg");
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+}
+    input[type="submit"] {
+      background: blue;
+      color: white;
+    } 
+  ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+</style>
+
+</head>
+
+<body>
+<h1>Bristol's Secret Bars</h1>
+<h2>The best speakeasies in the South-West</h2>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Bars</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+
+<div class="first">
+  <p>Hyde and Co<button>Like</button><br /> 
+  <small>Probably the most popular hidden bar in Bristol, be sure to make a booking to avoid being turned away at the door!</small></p>
+</div>
+
+<div class="second">
+  <p>Red Light<button>Like</button><br /> 
+  <small>The entrance to this bar is hidden behind a fake collect-call telephone on the side of the door and a dim red light.</small></p>
+</div>
+  
+<div class="third">
+  <p>Hausbar<button>Like</button><br /> 
+  <small>At the top of Whiteladies'road, this bar is open every evening from 8pm to 2am.</small></p>
+</div>
+
+<div class="fourth">
+  <p>Her Majesty's Secret Service<button>Like</button><br /> 
+  <small>Creative cocktails that change every season, don't be suprised when you see something served in a bean can or a brown paper bag!</small></p>
+</div>
+
+<div class="fifth">
+  <p>The Milk Thistle<button>Like</button><br /> 
+  <small>Right in the heart of the city centre, this discreet bar has made people go around in circles before discovering the door.</small></p>
+</div>
+
+<input type="email" placeholder="Your email">
+  <input type="submit">
+
+<script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
+
+
