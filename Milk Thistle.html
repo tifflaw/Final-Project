@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<head>
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"> </script> 
+<link href='NAME_OF_BOOTSTRAP_FOLDER/css/bootstrap.css' rel='stylesheet'> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+  #map {
+        height: 400px;
+        width: 100%;
+       }
+  body {
+    background-image: url("http://lakebluffhistory.org/casino/Resources/Brick%20Background.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+header {
+      text-align: center;
+      background-color: brown;
+      background-size: cover;
+      color: white;
+    }
+    }
+    p {
+      font-size: 22px;
+      color: white;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    h3 {
+      color: white;
+    }
+     h5 {
+      color: white;
+    }
+    footer {
+      text-align: center;
+      background-color: brown;
+      background-size: cover;
+      color: white;
+    }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+    color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+    .mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+    input[type="submit"] {
+      background: red;
+      color: white;
+    } 
+  </style>
+</head>
+
+<body>
+
+<header> 
+<h3>Bristol's Secret Bars Locations:
+The best speakeasies in the South-West</h3>
+    <ul>
+      <li><a href="./final project.html">Home</a></li>
+      <li><a href="./bars.html">Bars</a></li>
+      <li><a href="./contact us.html">Contact Us</a></li>
+    </ul>
+  </header>
+    
+  <h3>The Milk Thistle</h3> <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FTheMilkThistle%2F&width=51&layout=button&action=like&size=small&show_faces=false&share=false&height=65&appId" width="51" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    
+    <li><a href="http://milkthistlebristol.com/">Website</a></li></br>
+
+<h5> Right in the heart of the city centre, this discreet bar has made people go around in circles before locating the door.</h5>
+
+      <div id="map">
+    
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.175016604393!2d-2.597968684315318!3d51.45494302235844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718e77fe3ca629%3A0x2edbd7be781fe209!2sThe+Milk+Thistle!5e0!3m2!1sen!2suk!4v1511987297525" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>"
+    </div>
+
+<footer>
+<p>Subscribe to the weekly newsletter for special offers and recipes to make your own cocktails!
+<input class="emailbox" type="email" placeholder="Your email">
+  <input class="button" type="submit"></p>
+</footer>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?address=BS28NZ&key=AIzaSyC7UIBx6-nY61f-jMTB1N7Gq0WvdTgsXbI&callback=initMap">
+    </script>
+    
+    <script>
+$(document).ready(() => {
+
+    $(".button").on("click", function() {
+      alert("subscribed");
+    });
+
+
+  });
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000);
+    
+}
+
+</script>
+
+</body>
+
+</html> 
